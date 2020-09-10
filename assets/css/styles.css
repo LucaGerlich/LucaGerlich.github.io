@@ -8,7 +8,7 @@
 
 /*===== Colores =====*/
 :root{
-  --first-color: #fcba03;
+  --first-color: #4070F4;
   --second-color: #0E2431;
 }
 
@@ -128,6 +128,18 @@ img{
   align-items: center;
   font-weight: var(--font-semi);
 }
+
+.nav__menu_main{
+  position: fixed;
+  top: var(--header-height);
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--second-color);
+  transition: .5s;
+}
+
 @media screen and (max-width: 768px){
   .nav__menu{
     position: fixed;
@@ -229,7 +241,9 @@ img{
   font-weight: var(--font-semi);
   border-radius: .5rem;
 }
-
+.button:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
 
 /* ===== ABOUT =====*/
 .about__container{
